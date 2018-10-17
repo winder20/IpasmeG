@@ -1,0 +1,289 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Bienvenido</title>
+    {% block css %}
+
+    <!-- core CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/prettyPhoto.css' %}" rel="stylesheet">
+    <link href="{% static 'css/owl.carousel.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/icomoon.css' %}" rel="stylesheet">
+    <link href="{% static 'css/main.css' %}" rel="stylesheet">
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="{% static 'images/ico/favicon.ico' %}">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{% static 'images/ico/apple-touch-icon-144-precomposed.png' %}">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{% static 'images/ico/apple-touch-icon-114-precomposed.png' %}">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% static 'images/ico/apple-touch-icon-72-precomposed.png' %}">
+    <link rel="apple-touch-icon-precomposed" href="{% static 'images/ico/apple-touch-icon-57-precomposed.png' %}">
+    {% endblock %}
+</head>
+<!--/head-->
+
+
+<body>
+
+    <header id="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="top-number">
+                            <p><i class="fa fa-phone-square"></i> +0123 456 70 90</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="social">
+                            <ul class="social-share">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                            </ul>
+                            <div class="search">
+                                <form role="form">
+                                    <input type="text" class="search-form" autocomplete="off" placeholder="Search">
+                                    <i class="fa fa-search"></i>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/.container-->
+        </div>
+        <!--/.top-bar-->
+
+        <nav class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/"><img style="height: 50px;" src="{% static 'images/logo.png' %}" style="padding: 10px;" alt="logo"></a>
+                </div>
+
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/">Inicio</a></li>
+                        <li class="active"><a href="{% url 'paginas:sobre_nosotros'%}">Sobre Nosotros</a></li>
+                        
+
+                        <li><a href="{% url 'paginas:blog' %}">Blog</a></li>
+                        
+                        <li><a href="{% url 'paginas:contacto' %}">Contáctanos</a></li>
+
+                        <li><a href="/login/">Iniciar Seccion </a></li>
+                
+                
+                    </ul>
+                </div>
+            </div>
+            <!--/.container-->
+        </nav>
+        <!--/nav-->
+    </header>
+    <!--/header-->
+    <div class="page-title" style="background-image: url(static/images/page-title.png)">
+        <h1>Sobre Nosotros</h1>
+    </div>
+    
+    
+
+    <section id="about-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="about-img">
+                        <img src="{% static 'images/about-img.jpg' %}" alt="">
+                    </div>
+                </div>
+                
+                <div class="col-md-5">
+                    <div class="about-content">
+
+                        <div class="page-header">
+                        <h2> Historia</h2><small>IPASME GUANARE PORTUGUESA</small>
+                
+                        <p>RESEÑA HISTÓRICA :
+                         El Instituto de Previsión y Asistencia Social para el Personal del Ministerio de Educación (IPASME), fue creado el 23 de Noviembre de 1949 mediante Decreto N° 337 de la Junta Militar de Gobierno. Comenzó a funcionar el 1° de mayo de 1950. Posteriormente el 9 de Enero de 1959 la Junta de Gobierno en Consejo de Ministros, dicta el Decreto N° 513 para crear el Estatuto Orgánico que lo rige actualmente El Ipasme Guanare funciono por primera vez en la Policlínica Rivas en el año 1960-1961 Luego mudan su sede a la carrera 6 detrás de la gobernación del estado en casa de la Dra Alicia Guedez, ahí se estuvo hasta el año 1979. De allí se muda otra ve la sede al Edif. Las vegas en la av. 23 enero siendo el director el Dr Rafael quintero sierra, en tas sede se comenzó a prestar mas servicios a los docentes se contaba con Laboratorio de Bioanalisis, Odontología, Medicina General, Ginecología, Psiquiatría, Pediatría. Para el año de 1983 se mudan a su sede Principal ubicado en la Av. Limonero (al lado del Edif. ULA) en su I Etapa y no fue hasta el 22 de enero de 1993 que logra abrir completamente y en funcionamiento el Edificio Ipasme. Tenía como Consejo Directivo Presidido por el Prof. Edgar Zarzalejo, Directora Prof. Ramona Carreño, y el Director Prof. Carlos Andueza. La junta Administradora para ese año estaba a cargo de Juan Medina Lugo, Presidente, Dr. Pedro Ruiz, Vicepresidente, Prof. Oscar Aular, Secretario. Luego fue reinaugurada el 11 de agosto del 2004 por Presidente de la República Bolivariana de Venezuela Hugo Chávez Frías y El Ministro para la Educación Aristóbulo Isturis y como Director Administrativo Prof. Ramón Enrique Rodríguez. En los actuales momentos se cuenta con un personal Médico Asistencial y Administrativo de 183 trabajadores. En área asistencial se cuenta con 20 especializaciones. Odontología, RX, Bioanalisis, Ginecología, Pediatría, Medicina Gnral, Cardiología, Nefrología, Gastroenterología, Dermatología, Ecografía, Nutricionista, Psicólogo, Psiquiatría, Oftalmología, Neumología, Traumatólogo, Alergólogo, Otorrinolaringólogo, Urólogo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+    <div class="page-title" style="background-image: url(static/images/page-title.png)">
+        <h1>Sobre Nosotros</h1>
+    </div>
+    
+    
+
+    <section id="about-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="about-img">
+                        <img src="{% static 'images/about-img.jpg' %}" alt="">
+                    </div>
+                </div>
+                
+                <div class="col-md-5">
+                    <div class="about-content">
+
+                        <div class="page-header">
+                        <h2> Mision</h2><small>IPASME GUANARE PORTUGUESA</small>
+                
+                        <p>Promover y desarrollar un Sistema de Seguridad Social Integral y eficaz orientado al mejoramiento permanente de la Calidad de Vida de los profesores, maestros y personal administrativo del Ministerio del Poder Popular para la Educación y de otros organismos afiliados al Instituto de Previsión y Asistencia Social del Ministerio de Educación (IPASME), mediante la prestación oportuna, eficiente y efectiva de asistencia en sus requerimientos de afiliación, créditos: Hipotecarios o personales; médicos-asistencial; culturales, recreativos, deportivos y de ayudas socioeconómicas, siendo imprescindible para ello el establecimiento de sistemas y mecanismos que garanticen la protección social y el mejoramiento de las condiciones de vida de sus afiliados y beneficiarios.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+    <div class="page-title" style="background-image: url(static/images/page-title.png)">
+        <h1>Sobre Nosotros</h1>
+    </div>
+    
+    
+
+    <section id="about-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="about-img">
+                        <img src="{% static 'images/about-img.jpg' %}" alt="">
+                    </div>
+                </div>
+
+            <div class="col-md-5">
+                    <div class="about-content">
+
+                        <div class="page-header">
+                        <h2>Vision</h2><small>IPASME GUANARE PORTUGUESA</small>
+                
+                        <p> Ser un organismo eficiente en la prestación de servicios de Seguridad y Asistencia Social Integral, con una atención de alta calidad para el personal Docente y Administrativo del Ministerio del Poder Popular para la Educación, y otros entes educativos afiliados al IPASME, en el marco de los principios de universalidad, solidaridad, unidad, integralidad y participación democrática, para convertirnos en una Institución modelo del Sistema de Seguridad Social en Venezuela y en América Latina.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <section id="team-area">
+        <div class="container">
+            <div class="center fadeInDown">
+                <h2>Universidad Politecnica del Edo Portuguesa</h2>
+                <p class="lead"></p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 single-team">
+                    <div class="inner">
+                        <div class="team-img">
+                            <img src="{% static 'images/client1.jpg' %}" alt="">
+                        </div>
+                        <div class="team-content">
+                            <h4>Jesus Palma</h4>
+                            <span class="desg">UI/UX Designer</span>
+                            <div class="team-social">
+                                <a class="fa fa-facebook" href="#"></a>
+                                <a class="fa fa-twitter" href="#"></a>
+                                <a class="fa fa-linkedin" href="#"></a>
+                                <a class="fa fa-pinterest" href="#"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 single-team">
+                    <div class="inner">
+                        <div class="team-img">
+                            <img src="{% static 'images/client2.jpg' %}" alt="">
+                        </div>
+                        <div class="team-content">
+                            <h4>Winder Montilla</h4>
+                            <span class="desg">UI/UX Designer</span>
+                            <div class="team-social">
+                                <a class="fa fa-facebook" href="#"></a>
+                                <a class="fa fa-twitter" href="#"></a>
+                                <a class="fa fa-linkedin" href="#"></a>
+                                <a class="fa fa-pinterest" href="#"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 single-team">
+                    <div class="inner">
+                        <div class="team-img">
+                            <img src="{% static 'images/client3.jpg' %}" alt="">
+                        </div>
+                        <div class="team-content">
+                            <h4>Yohendri Becerra</h4>
+                            <span class="desg">UI/UX Designer</span>
+                            <div class="team-social">
+                                <a class="fa fa-facebook" href="#"></a>
+                                <a class="fa fa-twitter" href="#"></a>
+                                <a class="fa fa-linkedin" href="#"></a>
+                                <a class="fa fa-pinterest" href="#"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer id="footer" class="midnight-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    &copy; 2018 <a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">ShapeBootstrap</a>. All Rights Reserved.
+                </div>
+                <div class="col-sm-6">
+                    <ul class="pull-right">
+                        <li><a href="/">Inicio</a></li>
+                        <li><a href="sobre_nosotros">Sobre Nosotros</a></li>
+                        <li><a href="contacto">Contáctanos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/#footer-->
+    {% block js%}
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/main.js"></script>
+
+    {% endblock %}
+</body>
+
+</html>
+
